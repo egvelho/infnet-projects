@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.conteudo {
+  margin: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.conteudo-paragrafo {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 12px;
+  text-align: justify;
+}
+
+@media (max-width: 960px) {
+  .app-bar-links {
+    display: none;
+  }
+
+  .cabecalho {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .cabecalho-titulo {
+    font-size: 28px;
+  }
+
+  .conteudo {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .opcoes-compartilhamento {
+    display: none;
+  }
+
+  .link-imagem-container {
+    display: none;
+  }
+
+  .form-contato {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+
+@media (min-width: 961px) {
+  .cabecalho-conteudo {
+    width: 800px;
+  }
+
+  .conteudo {
+    width: 640px;
+  }
+
+  .form-contato {
+    width: 640px;
+    margin: auto;
+  }
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.link-conteudo {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.link-data {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.link-link {
+  color: purple;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.link-imagem {
+  width: 128px;
+}
+
+.form-contato-container {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.form-titulo {
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item-inline {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.form-campo-texto {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.form-campo-textarea {
+  padding: 8px;
+  resize: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-campo-texto,
+.form-campo-textarea {
+  outline: none;
+  border: solid 3px #7f8c8d;
+}
+
+.form-campo-texto:focus,
+.form-campo-textarea:focus {
+  border: solid 3px #2c3e50;
+}
+
+.form-botao-enviar {
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-botao-enviar:hover {
+  background-color: coral;
+  color: white;
+}
+
+.reset-checkbox-radio {
+  margin: 0;
+}

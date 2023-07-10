@@ -1,0 +1,6 @@
+POST http://localhost:8080/posts
+Content-Type: application/json
+
+{
+  "message": "No entanto, não podemos esquecer que a mobilidade dos."
+}

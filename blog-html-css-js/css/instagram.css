@@ -1,0 +1,88 @@
+.instagram-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px auto;
+  width: 608px;
+}
+
+.instagram-image {
+  width: 192px;
+  height: 192px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.instagram-image:hover {
+  transform: scaleX(-1);
+}
+
+.instagram-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.open {
+  display: flex;
+}
+
+.instagram-modal {
+  width: 80%;
+  max-width: 480px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.instagram-modal-image {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.instagram-modal-content {
+  padding: 12px;
+}
+
+.instagram-modal-title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.instagram-modal-text {
+  line-height: 1.3;
+  font-size: 16px;
+}
+
+.instagram-modal-actions {
+  text-align: end;
+  padding: 12px;
+}
+
+.instagram-modal-actions-button {
+  color: #f5f6fa;
+  background-color: #273c75;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.danger-button {
+  background-color: #eb4d4b;
+}
+
+.instagram-modal-actions-button:hover {
+  opacity: 0.8;
+}

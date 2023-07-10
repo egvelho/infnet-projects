@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Um algoritmo para gerar redes de palavras</title>
+    <link rel="stylesheet" href="/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- app-bar inicio -->
+    <div class="app-bar">
+      <div class="app-bar-esquerda">
+        <div class="app-bar-logo-container">
+          <a href="/" class="app-bar-link">
+            <img
+              src="/imagens/logo-appbar.svg"
+              alt="Logo da página"
+              class="app-bar-logo"
+            />
+          </a>
+        </div>
+        <div class="app-bar-links">
+          <a href="/" class="app-bar-link">Página inicial</a>
+          <a href="/" class="app-bar-link">Acessar postagens</a>
+        </div>
+      </div>
+      <div class="app-bar-direita">
+        <a href="/" class="app-bar-link">Entrar em contato</a>
+      </div>
+    </div>
+    <!-- app-bar fim -->
+    <!-- cabecalho inicio -->
+    <div class="cabecalho">
+      <div class="cabecalho-conteudo">
+        <div class="lista-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Programação funcional</span>
+        </div>
+        <h1 class="cabecalho-titulo">
+          Um algoritmo para gerar redes de palavras
+        </h1>
+        <p class="cabecalho-descricao">
+          Uma introdução baseada em exemplos para as mais importantes funções de
+          mapeamento de arrays em JavaScript.
+        </p>
+        <div class="cabecalho-autor-info">
+          <div class="autor-detalhes">
+            <div class="autor-foto-container">
+              <img
+                src="https://loremflickr.com/cache/resized/65535_51675954859_dd93e58e9a_q_128_128_nofilter.jpg"
+                class="autor-foto"
+              />
+            </div>
+            <div class="autor-minicurriculo">
+              <span class="autor-nome">Eduardo Velho</span>
+              <span class="autor-formacao">Professor e pesquisador</span>
+            </div>
+          </div>
+          <div class="opcoes-compartilhamento">Compartilhar em</div>
+        </div>
+      </div>
+    </div>
+    <!-- cabecalho fim -->
+    <!-- conteudo inicio -->
+    <div class="conteudo">
+      <p class="conteudo-paragrafo">
+        O primeiro passo do algoritmo consiste no pré-processamento do texto de
+        entrada, que é normalizado para minúsculas e todas as pontuações,
+        acentos e espaços excedentes são removidos do conteúdo. Depois disso, o
+        texto é tokenizado e as palavras irrelevantes (stopwords) também são
+        removidas. A última etapa de preparação consiste na substituição de
+        algumas gírias da internet por seus respectivos sinônimos "formais".
+        Essa lógica de substituição utiliza uma versão aprimorada do dicionário
+        léxico desenvolvido no projeto UGCNormal.
+      </p>
+      <p class="conteudo-paragrafo">
+        Depois disso, um algoritmo de coocorrência lexical simples é utilizado
+        para "quebrar" o texto em uma lista de n-gramas, cujo comprimento está
+        baseado no parâmetro coocurrenceWindow. Desta forma, a seguinte
+        estrutura de grafo é gerada tomando como base essa lista de n-gramas:
+      </p>
+      <p class="conteudo-paragrafo">
+        O vertex é um objeto que representa as coocorrências de tokens
+        (vértices). O objeto nodes salva as frequências de todos os tokens. Por
+        último, as edges (arestas) representam as relações entre os nós, que são
+        ponderadas pela frequência de coocorrência.
+      </p>
+    </div>
+    <!-- conteudo fim -->
+  </body>
+</html>

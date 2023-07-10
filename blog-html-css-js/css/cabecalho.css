@@ -1,0 +1,65 @@
+.cabecalho {
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: purple;
+}
+
+.cabecalho-conteudo {
+  margin: auto;
+}
+
+.cabecalho-autor-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.autor-detalhes {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.autor-foto-container {
+}
+
+.autor-foto {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+
+.autor-minicurriculo {
+  display: flex;
+  flex-direction: column;
+}
+
+.opcoes-compartilhamento {
+  text-transform: uppercase;
+}
+
+.lista-tags {
+  margin-bottom: 12px;
+}
+
+.tag {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.cabecalho-titulo {
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.cabecalho-descricao {
+}

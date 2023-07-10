@@ -1,0 +1,11 @@
+.field-error {
+  outline: none;
+  border: solid 3px #e74c3c !important;
+}
+
+.field-error-message {
+  padding-top: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #e74c3c;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/estilos.css" />
+    <link rel="stylesheet" href="/css/app-bar.css" />
+    <link rel="stylesheet" href="/css/drawer.css" />
+    <link rel="stylesheet" href="/css/instagram.css" />
+    <link rel="stylesheet" href="/css/cabecalho.css" />
+    <link rel="stylesheet" href="/css/comments.css" />
+    <link rel="stylesheet" href="/css/banner.css" />
+    <link rel="stylesheet" href="/css/contact-form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- app-bar inicio -->
+    <div class="app-bar">
+      <div class="app-bar-esquerda">
+        <div class="app-bar-logo-container">
+          <a href="/" class="app-bar-link">
+            <img
+              src="/imagens/logo-appbar.svg"
+              alt="Logo da página"
+              class="app-bar-logo"
+            />
+          </a>
+        </div>
+        <div class="app-bar-links">
+          <a href="/" class="app-bar-link">Página inicial</a>
+          <a href="/" class="app-bar-link">Acessar postagens</a>
+        </div>
+      </div>
+      <div class="app-bar-direita">
+        <div id="app-bar-clock" class="app-bar-clock"></div>
+        <a href="/" class="app-bar-link">Entrar em contato</a>
+        <button
+          id="app-bar-open-drawer-button"
+          class="app-bar-open-drawer-button"
+        >
+          <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" />
+        </button>
+      </div>
+    </div>
+    <!-- app-bar fim -->
+    <!-- drawer inicio -->
+    <aside id="drawer" class="drawer">
+      <a href="/postagens/map-filter-reduce.html" class="link-link">
+        Map, filter e reduce: primeiros passos de programação em JavaScript
+      </a>
+      <a href="/postagens/tecnologias-javascript.html" class="link-link">
+        Como escolher as tecnologias do seu próximo projeto em JavaScript?
+      </a>
+      <a href="/postagens/rede-de-palavras.html" class="link-link">
+        Um algoritmo para gerar redes de palavras
+      </a>
+    </aside>
+    <!-- drawer fim -->
+    <!-- banner inicio -->
+    <section id="banner" class="banner"></section>
+    <!-- banner fim -->
+    <!-- conteudo inicio -->
+    <div class="conteudo">
+      <div class="links-container">
+        <!-- link-item inicio -->
+        <div class="link-item">
+          <div class="link-conteudo">
+            <span class="link-data">Em julho de 2020</span>
+            <a href="/postagens/map-filter-reduce.html" class="link-link">
+              Map, filter e reduce: primeiros passos de programação funcional em
+              JavaScript
+            </a>
+          </div>
+          <div class="link-imagem-container">
+            <img
+              src="https://loremflickr.com/cache/resized/65535_51811075674_9708ed1768_n_320_240_nofilter.jpg"
+              alt=""
+              class="link-imagem"
+            />
+          </div>
+        </div>
+        <!-- link-item fim -->
+        <!-- link-item inicio -->
+        <div class="link-item">
+          <div class="link-conteudo">
+            <span class="link-data">Em setembro de 2020</span>
+            <a href="/postagens/tecnologias-javascript.html" class="link-link">
+              Como escolher as tecnologias do seu próximo projeto em JavaScript?
+            </a>
+          </div>
+          <div class="link-imagem-container">
+            <img
+              src="https://loremflickr.com/cache/resized/65535_51811075674_9708ed1768_n_320_240_nofilter.jpg"
+              alt=""
+              class="link-imagem"
+            />
+          </div>
+        </div>
+        <!-- link-item fim -->
+        <!-- link-item inicio -->
+        <div class="link-item">
+          <div class="link-conteudo">
+            <span class="link-data">Em janeiro de 2023</span>
+            <a href="/postagens/rede-de-palavras.html" class="link-link">
+              Um algoritmo para gerar redes de palavras
+            </a>
+          </div>
+          <div class="link-imagem-container">
+            <img
+              src="https://loremflickr.com/cache/resized/65535_51811075674_9708ed1768_n_320_240_nofilter.jpg"
+              alt=""
+              class="link-imagem"
+            />
+          </div>
+        </div>
+        <!-- link-item fim -->
+      </div>
+    </div>
+    <!-- conteudo fim -->
+    <!-- instagram inicio -->
+    <section id="instagram-section" class="instagram-section">
+      <div id="instagram-grid" class="instagram-grid"></div>
+      <div id="instagram-backdrop" class="instagram-backdrop">
+        <div id="instagram-modal" class="instagram-modal">
+          <img
+            class="instagram-modal-image"
+            id="instagram-modal-image"
+            src="https://i.pinimg.com/564x/58/83/63/588363427a3b3db8f4569f205c51ef85--cute-backgrounds-wallpaper-backgrounds.jpg"
+          />
+          <div class="instagram-modal-content">
+            <h3 class="instagram-modal-title" id="instagram-modal-title"></h3>
+            <p class="instagram-modal-text" id="instagram-modal-text"></p>
+          </div>
+          <div class="instagram-modal-actions">
+            <button
+              id="instagram-modal-delete-button"
+              class="instagram-modal-actions-button danger-button"
+            >
+              Apagar imagem
+            </button>
+            <button
+              id="instagram-modal-close-button"
+              class="instagram-modal-actions-button"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- instagram fim -->
+    <!-- comments comeco -->
+    <section id="comments-section" class="comments-section">
+      <div id="comments-list" class="comments-list"></div>
+    </section>
+    <!-- comments final -->
+    <!-- form-contato-container inicio -->
+    <div class="form-contato-container">
+      <form novalidate class="form-contato" id="form-contato">
+        <h2 class="form-titulo">Entrar em contato</h2>
+        <div class="form-item">
+          <label for="form-nome">Nome completo</label>
+          <input
+            type="text"
+            placeholder="Digite seu nome"
+            id="form-nome"
+            name="form-nome"
+            class="form-campo-texto"
+          />
+          <span class="field-error-message" id="form-nome-error-message"></span>
+        </div>
+        <div class="form-item">
+          <label for="form-email">Email</label>
+          <input
+            type="email"
+            placeholder="Digite seu email"
+            id="form-email"
+            name="form-email"
+            class="form-campo-texto"
+          />
+          <span
+            class="field-error-message"
+            id="form-email-error-message"
+          ></span>
+        </div>
+        <div class="form-item-inline">
+          <input
+            type="checkbox"
+            id="form-inscrever-newsletter"
+            name="form-inscrever-newsletter"
+            checked
+            class="reset-checkbox-radio"
+          />
+          <label for="form-inscrever-newsletter">
+            Quero receber atualizações por email
+          </label>
+        </div>
+        <div class="form-item-inline">
+          <input
+            type="radio"
+            name="form-biscoito-ou-bolacha"
+            id="escolha-biscoito"
+            class="reset-checkbox-radio"
+            value="biscoito"
+          />
+          <label for="escolha-biscoito">Biscoito</label>
+          <input
+            type="radio"
+            name="form-biscoito-ou-bolacha"
+            id="escolha-bolacha"
+            class="reset-checkbox-radio"
+            value="bolacha"
+            checked
+          />
+          <label for="escolha-bolacha">Bolacha</label>
+        </div>
+        <div class="form-item">
+          <textarea
+            placeholder="Digite a sua mensagem"
+            id="form-mensagem"
+            name="form-mensagem"
+            class="form-campo-textarea"
+            rows="5"
+          ></textarea>
+          <span
+            class="field-error-message"
+            id="form-mensagem-error-message"
+          ></span>
+        </div>
+        <div class="form-item">
+          <button type="submit" class="form-botao-enviar">Enviar agora</button>
+        </div>
+      </form>
+    </div>
+    <!-- form-contato-container fim -->
+    <script src="/js/script.js"></script>
+    <script src="/js/drawer.js"></script>
+    <script src="/js/instagram.js"></script>
+    <script src="/js/comments.js"></script>
+    <script src="/js/app-bar.js"></script>
+    <script src="/js/banner.js"></script>
+    <script src="/js/contact-form.js"></script>
+  </body>
+</html>

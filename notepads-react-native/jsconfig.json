@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "checkJs": true,
+    "jsx": "react-native"
+  },
+  "extends": "expo/tsconfig.base",
+  "include": ["**/*"],
+  "exclude": ["node_modules", "**/node_modules/*"]
+}

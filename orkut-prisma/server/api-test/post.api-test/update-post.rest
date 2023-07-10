@@ -1,0 +1,6 @@
+PUT http://localhost:8080/posts/2366
+Content-Type: application/json
+
+{
+  "message": "Uma nova mensagem para testar o endpoint!"
+}

@@ -1,0 +1,7 @@
+POST http://localhost:8080/comments
+Content-Type: application/json
+
+{
+  "post_id": 1466,
+  "message": "No entanto, não podemos"
+}

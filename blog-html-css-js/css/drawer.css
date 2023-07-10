@@ -1,0 +1,16 @@
+.drawer {
+  width: 256px;
+  height: calc(100% - 64px);
+  position: fixed;
+  right: -256px;
+  transition: right 1s;
+  top: 64px;
+  background-color: white;
+  box-shadow: -9px 10px 27px -7px rgba(0, 0, 0, 0.31);
+}
+
+.drawer > .link-link {
+  display: block;
+  padding: 16px;
+  border-bottom: solid 1px #8e44ad;
+}

@@ -1,0 +1,9 @@
+POST http://localhost:8080/notepads
+Content-Type: application/json
+
+{
+  "title": "No entanto, não podemos esquecer",
+  "subtitle": "No entanto, não podemos esquecer que a mobilidade dos capitais",
+  "content": "No entanto, não podemos esquecer que a mobilidade dos capitais internacionais ainda não demonstrou convincentemente que vai participar na mudança das novas proposições.",
+  "created_at": "2023-04-17T10:48:18.584Z"
+}

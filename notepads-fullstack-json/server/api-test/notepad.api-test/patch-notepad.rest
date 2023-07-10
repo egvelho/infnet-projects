@@ -1,0 +1,6 @@
+PATCH http://localhost:8080/notepads/3
+Content-Type: application/json
+
+{
+  "title": "Título alterado"
+}
