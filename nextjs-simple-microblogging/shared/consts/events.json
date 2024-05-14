@@ -1,0 +1,5 @@
+{
+  "toggleSignInDialog": "TOGGLE_SIGNIN_DIALOG",
+  "displayToastMessage": "DISPLAY_TOAST_MESSAGE",
+  "toggleAuthState": "TOGGLE_AUTH_STATE"
+}

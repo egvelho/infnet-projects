@@ -1,0 +1,5 @@
+{
+  "name": "Microblogue Next.js",
+  "description": "Um simples microblogue em Next.js",
+  "messageMaxSize": 140
+}
