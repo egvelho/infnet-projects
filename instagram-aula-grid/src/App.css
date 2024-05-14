@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: Helvetica;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html,
+body,
+#root,
+.window-container {
+  width: 100%;
+  height: 100%;
+}
+
+.window-container {
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  grid-template-rows: 256px 1fr 96px;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar pictures"
+    "sidebar footer";
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  padding-inline: 16px;
+  column-gap: 16px;
+  row-gap: 8px;
+  align-content: center;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, min-content);
+  grid-template-areas:
+    "avatar name"
+    "avatar metrics"
+    "avatar bio";
+}
+
+.header-avatar {
+  grid-area: avatar;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.header-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  grid-area: name;
+}
+
+.header-metrics {
+  grid-area: metrics;
+  display: flex;
+  gap: 16px;
+}
+
+.header-bio {
+  grid-area: bio;
+}
+
+.header-bio .name {
+  font-weight: bold;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  overflow-y: auto;
+  width: 256px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 1px solid gray;
+  padding-block: 32px;
+  padding-inline: 16px;
+  box-sizing: border-box;
+}
+
+.sidebar-logo-container {
+  margin-bottom: 32px;
+}
+
+.sidebar-logo-container img {
+  width: 100px;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar-links li {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.pictures {
+  padding-block: 32px;
+  padding-inline: 16px;
+  grid-area: pictures;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 300px));
+  gap: 4px;
+}
+
+.pictures img {
+  width: 100%;
+}
+
+.footer {
+  grid-area: footer;
+  color: gray;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  padding-block: 16px;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-links,
+.footer-info {
+  display: flex;
+  gap: 16px;
+  margin: auto;
+}
