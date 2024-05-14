@@ -1,0 +1,18 @@
+.text-area {
+  padding: 8px;
+  border: 1px solid  #777;
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+  height: 72px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-area:focus {
+  border-color:  #303F9F;
+}
+
+.text-area-error, .text-area-error:focus {
+  border-color: #F25C54;
+}

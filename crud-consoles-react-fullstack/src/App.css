@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: Helvetica;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.bg-red {
+  background-color: #fa1219;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.create-console-form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 800px;
+  margin: auto;
+  padding: 16px;
+}
+
+.create-console-form .title {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.button {
+  padding: 8px;
+  border: none;
+  background-color: purple;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button:hover {
+  opacity: 0.75;
+}
+
+.text-field {
+  border: solid 1px #eee;
+  border-radius: 8px;
+  padding: 8px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-field:focus {
+  border-color: purple;
+}
+
+.console-list {
+  padding: 0;
+  margin: 0;
+  max-width: 800px;
+  margin: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+.console-list .item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: solid 1px #ccc;
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.console-list .item-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.console-list .button-container {
+  display: flex;
+  gap: 8px;
+}
+
+.ano {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.nome {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-block: 8px;
+}

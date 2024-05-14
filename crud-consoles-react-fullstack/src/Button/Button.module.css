@@ -1,0 +1,15 @@
+.button {
+  padding: 8px;
+  border: none;
+  background-color: purple;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button:hover {
+  opacity: 0.75;
+}

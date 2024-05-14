@@ -1,0 +1,27 @@
+.app-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 60px;
+  gap: 8px;
+}
+
+@media (prefers-color-scheme: light) {
+  .app-bar {
+    background-color: var(--bg-light-theme);
+    color: var(--text-color-light-theme);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .app-bar {
+    background-color: var(--bg-dark-theme);
+    color: var(--text-color-dark-theme);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+}

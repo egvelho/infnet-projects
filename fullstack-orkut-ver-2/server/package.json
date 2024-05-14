@@ -1,0 +1,55 @@
+{
+  "name": "bc-orkut-fullstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prod": "node src/index.mjs",
+    "dev": "nodemon --inspect src/index.ts",
+    "seed:post": "ts-node src/post/post.seed.ts",
+    "seed:user": "ts-node src/user/user.seed.ts",
+    "seed:friend": "ts-node src/friend/friend.seed.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/egvelho/bc-orkut-fullstack.git"
+  },
+  "author": "egvelho",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/egvelho/bc-orkut-fullstack/issues"
+  },
+  "homepage": "https://github.com/egvelho/bc-orkut-fullstack#readme",
+  "dependencies": {
+    "@prisma/client": "^5.4.2",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "multer": "^1.4.5-lts.1",
+    "reflect-metadata": "^0.1.13",
+    "routing-controllers": "^0.10.4",
+    "sharp": "^0.32.6",
+    "typedi": "^0.10.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "@types/bcrypt": "^5.0.2",
+    "@types/body-parser": "^1.19.3",
+    "@types/express": "^4.17.18",
+    "@types/jsonwebtoken": "^9.0.4",
+    "@types/multer": "^1.4.8",
+    "@types/node": "^20.6.0",
+    "@types/react": "^18.2.21",
+    "nodemon": "^3.0.1",
+    "prisma": "^5.4.2",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2"
+  }
+}

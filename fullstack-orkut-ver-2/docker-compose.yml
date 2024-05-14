@@ -1,0 +1,51 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: mysql:8.2.0
+    restart: unless-stopped
+    env_file: ./server/.env
+    environment:
+      - MYSQL_ROOT_PASSWORD=aluno123
+      - MYSQL_DATABASE=orkut
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql_db:/var/lib/mysql
+  mongo:
+    image: mongo:latest
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=aluno
+      - MONGO_INITDB_ROOT_PASSWORD=aluno123
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo_db:/data/db
+  server:
+    depends_on:
+      - mysql
+      - mongo
+    build: ./server
+    restart: unless-stopped
+    env_file: ./server/.env
+    ports:
+      - $PORT:$PORT
+    environment:
+      - PORT=$PORT
+      - HOST=$HOST
+      - DATABASE_URL=$DATABASE_URL
+      - MONGODB_URL=$MONGODB_URL
+      - JWT_SECRET=$JWT_SECRET
+    stdin_open: true
+    tty: true
+  client:
+    build: ./client
+    restart: unless-stopped
+    ports:
+      - 5173:5173
+    stdin_open: true
+    tty: true
+
+volumes:
+  mysql_db:
+  mongo_db:

@@ -1,0 +1,23 @@
+:root {
+  --bg-dark-theme: #0f0f0f;
+  --text-color-dark-theme: #f0f0f0;
+  --bg-light-theme: #fff;
+  --text-color-light-theme: #0f0f0f;
+  --hover-color: rgba(255, 255, 255, 0.25);
+}
+
+html {
+  font-family: Roboto;
+}
+
+body {
+  background-color: var(--bg-light-theme) !important;
+  color: var(--text-color-light-theme) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-dark-theme) !important;
+    color: var(--text-color-dark-theme) !important;
+  }
+}

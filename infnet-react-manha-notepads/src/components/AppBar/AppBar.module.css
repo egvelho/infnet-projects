@@ -1,0 +1,22 @@
+.app-bar {
+  background-color: white;
+  padding: 12px;
+  box-shadow: -5px 8px 5px -1px rgba(0,0,0,0.48);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.app-bar-logo {
+  width: 24px;
+  height: 24px;
+}
+
+.app-bar-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}

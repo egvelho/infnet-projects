@@ -1,0 +1,16 @@
+.text-field {
+  padding: 8px;
+  border: 1px solid  #777;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-field:focus {
+  border-color:  #303F9F;
+}
+
+.text-field-error, .text-field-error:focus {
+  border-color: #F25C54;
+}

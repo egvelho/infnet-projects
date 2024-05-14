@@ -1,0 +1,10 @@
+.message {
+  color:  #777;
+  margin: 0;
+  font-size: 0.7rem;
+  line-height: 1.1;
+}
+
+.message-error {
+  color: #F25C54;
+}

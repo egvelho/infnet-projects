@@ -1,0 +1,12 @@
+.title {
+  opacity: 0.9;
+  font-size: 150%;
+  margin: 8px 0;
+  text-align: center;
+}
+
+@media(max-width: 600px) {
+  .title {
+    font-size: 120%;
+  }
+}

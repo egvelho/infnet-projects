@@ -1,0 +1,12 @@
+.img-grid {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px;
+}
+
+@media (min-width: 600px) {
+  .img-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

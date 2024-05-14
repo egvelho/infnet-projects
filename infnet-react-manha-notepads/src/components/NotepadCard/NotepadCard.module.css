@@ -1,0 +1,30 @@
+.notepad-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 4px;
+}
+
+.notepad-id {
+  color: #444;
+  font-size: 0.9em;
+}
+
+.notepad-created-at {
+  color: #444;
+  font-size: 0.9em;
+}
+
+.notepad-title {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.notepad-subtitle {
+  margin: 0;
+}
+
+.notepad-content {
+  margin: 0;
+  margin-top: 8px;
+}
