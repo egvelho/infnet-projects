@@ -1,0 +1,11 @@
+{
+  "home": "Home",
+  "signUp": "SignUp",
+  "user": {
+    "navigator": "User",
+    "profile": "User.Profile",
+    "posts": "User.Posts",
+    "users": "User.Users",
+    "viewProfile": "User.ViewProfile"
+  }
+}
